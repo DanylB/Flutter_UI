@@ -1,0 +1,58 @@
+import 'package:courses_ui/models/course_model.dart';
+
+final List<CourseTile> courseTile = [
+  CourseTile(
+    image: 'assets/Course_1.png',
+    title: 'Learn to Code Making Games',
+    teg: ['C#', 'Unity'],
+    hours: '35 hours',
+    price: '\$35 ',
+    rating: 4.3,
+    progress: 0.8,
+  ),
+  CourseTile(
+    image: 'assets/Course_2.png',
+    title: 'Make Your First 2D Game',
+    teg: ['C#', 'Unity'],
+    hours: '40 hours',
+    price: '\$30 ',
+    rating: 4.2,
+    progress: 0.6,
+  ),
+  CourseTile(
+    image: 'assets/Course_1.png',
+    title: 'Learn to Code Making Games',
+    teg: ['Python', 'Django'],
+    hours: '2 hours',
+    price: '\$1500 ',
+    rating: 3.0,
+    progress: 0.3,
+  ),
+  CourseTile(
+    image: 'assets/Course_2.png',
+    title: 'Make Your First 2D Game',
+    teg: ['Dart', 'Flutter'],
+    hours: '400 hours',
+    price: 'free ',
+    rating: 4.0,
+    progress: 0.5,
+  ),
+  CourseTile(
+    image: 'assets/Course_1.png',
+    title: 'Learn to Code Making Games',
+    teg: ['JavaScript', 'HTML'],
+    hours: '35 hours',
+    price: '\$35 ',
+    rating: 5.0,
+    progress: 0.4,
+  ),
+  CourseTile(
+    image: 'assets/Course_2.png',
+    title: 'Make Your First 2D Game',
+    teg: ['C#', 'Unity'],
+    hours: '40 hours',
+    price: '\$30 ',
+    rating: 4.2,
+    progress: 0.6,
+  ),
+];
