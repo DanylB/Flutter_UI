@@ -150,7 +150,7 @@ class HomePage extends StatelessWidget {
       children: [
         Container(
           height: 5,
-          width: index == 1 ? 15 : 1,
+          width: index == 1 ? 15 : 5,
           decoration: BoxDecoration(
             color: index == 1 ? Color(0xFF101010) : Color(0xFFE5E5E5),
             borderRadius: BorderRadius.circular(10),
@@ -159,7 +159,7 @@ class HomePage extends StatelessWidget {
         SizedBox(width: 5),
         Container(
           height: 5,
-          width: index == 2 ? 15 : 1,
+          width: index == 2 ? 15 : 5,
           decoration: BoxDecoration(
             color: index == 2 ? Color(0xFF101010) : Color(0xFFE5E5E5),
             borderRadius: BorderRadius.circular(10),
@@ -168,7 +168,7 @@ class HomePage extends StatelessWidget {
         SizedBox(width: 5),
         Container(
           height: 5,
-          width: index == 3 ? 15 : 1,
+          width: index == 3 ? 15 : 5,
           decoration: BoxDecoration(
             color: index == 3 ? Color(0xFF101010) : Color(0xFFE5E5E5),
             borderRadius: BorderRadius.circular(10),
