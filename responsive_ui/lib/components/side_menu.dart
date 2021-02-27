@@ -31,6 +31,7 @@ class SideMenu extends StatelessWidget {
               ],
             ),
             SizedBox(height: kDefaultPadding),
+            @ignore
             FlatButton.icon(
               minWidth: double.infinity,
               padding: EdgeInsets.symmetric(

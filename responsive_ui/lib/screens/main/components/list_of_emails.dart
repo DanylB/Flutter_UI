@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:outlook/components/side_menu.dart';
 import 'package:outlook/models/Email.dart';
