@@ -31,7 +31,8 @@ class SideMenu extends StatelessWidget {
               ],
             ),
             SizedBox(height: kDefaultPadding),
-            @ignore
+            
+            // ignore: deprecated_member_use
             FlatButton.icon(
               minWidth: double.infinity,
               padding: EdgeInsets.symmetric(
@@ -53,6 +54,7 @@ class SideMenu extends StatelessWidget {
               bottomShadowColor: Color(0xFF234395).withOpacity(0.2),
             ),
             SizedBox(height: kDefaultPadding),
+            // ignore: deprecated_member_use
             FlatButton.icon(
               minWidth: double.infinity,
               padding: EdgeInsets.symmetric(
