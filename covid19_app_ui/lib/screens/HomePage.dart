@@ -4,41 +4,44 @@ import 'package:google_fonts/google_fonts.dart';
 class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: ListView(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-              color: Color(0xFF473F97),
-              borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(40),
-                bottomRight: Radius.circular(40),
+    return SafeArea(
+      child: Scaffold(
+        body: ListView(
+          scrollDirection: Axis.vertical,
+          children: [
+            Container(
+              decoration: BoxDecoration(
+                color: Color(0xFF473F97),
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(40),
+                  bottomRight: Radius.circular(40),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _buildAppBar(),
+                    SizedBox(height: 20),
+                    _buildTitleWithDropDawn(),
+                    SizedBox(height: 40),
+                    _buildSubtitleText(),
+                    SizedBox(height: 14),
+                    _buildBodyText(),
+                    SizedBox(height: 16),
+                    _buildButtons()
+                  ],
+                ),
               ),
             ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(24, 24, 24, 32),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _buildAppBar(),
-                  SizedBox(height: 20),
-                  _buildTitleWithDropDawn(),
-                  SizedBox(height: 40),
-                  _buildSubtitleText(),
-                  SizedBox(height: 14),
-                  _buildBodyText(),
-                  SizedBox(height: 16),
-                  _buildButtons()
-                ],
-              ),
-            ),
-          ),
-          _buildPrevention(context),
-          SizedBox(height: 14),
-          _buildWomanContainer(context),
-        ],
+            _buildPrevention(context),
+            SizedBox(height: 14),
+            _buildWomanContainer(context),
+          ],
+        ),
+        bottomNavigationBar: _buildBottomNavBar(context),
       ),
-      bottomNavigationBar: _buildBottomNavBar(context),
     );
   }
 

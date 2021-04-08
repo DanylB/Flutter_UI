@@ -5,19 +5,21 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFF473F97),
-      body: Container(
-        child: ListView(
-          children: [
-            _buildAppBar(),
-            _buildTitle(),
-            BuildSwitch(),
-            SizedBox(height: 34),
-            BuildModeIndicator(),
-            _buildGridCard(),
-            BuildChart(),
-          ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Color(0xFF473F97),
+        body: Container(
+          child: Column(
+            children: [
+              _buildAppBar(),
+              _buildTitle(),
+              BuildSwitch(),
+              SizedBox(height: 34),
+              BuildModeIndicator(),
+              _buildGridCard(),
+              BuildChart(),
+            ],
+          ),
         ),
       ),
     );

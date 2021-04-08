@@ -11,7 +11,7 @@ class BuildChart extends StatelessWidget {
     final covidCases = [3.0, 8.0, 6.0, 10.0, 7.0, 12.0, 14.0];
     return Container(
       width: double.infinity,
-      height: 300,
+      height: 319,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.only(
           topRight: Radius.circular(40),
