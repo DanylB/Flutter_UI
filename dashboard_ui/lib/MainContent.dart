@@ -177,36 +177,40 @@ class _GridItemState extends State<GridItem> {
               children: [
                 Text(widget.title, style: kGridItemTitleStyle),
                 const SizedBox(height: 5),
-                Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-                  CircleAvatar(
-                    child: Image.asset(widget.avatarPath),
-                  ),
-                  const SizedBox(width: 10),
-                  Text(
-                    widget.avtorName,
-                    style: kAvtorNameStyle,
-                  ),
-                  const SizedBox(width: 30),
-                  Container(
-                    padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    decoration: kGridItemPriceBoxStyle,
-                    child: Row(children: [
-                      SvgPicture.asset('assets/ETH_icon.svg'),
-                      const SizedBox(width: 5),
-                      Text(
-                        '${widget.price} ETH',
-                        style: kGridItemPriceTextStyle,
+                Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      CircleAvatar(
+                        child: Image.asset(widget.avatarPath),
                       ),
+                      const SizedBox(width: 10),
+                      Text(
+                        widget.avtorName,
+                        style: kAvtorNameStyle,
+                      ),
+                      const SizedBox(width: 10),
+                      Container(
+                        padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+                        decoration: kGridItemPriceBoxStyle,
+                        child: Row(children: [
+                          SvgPicture.asset('assets/ETH_icon.svg'),
+                          const SizedBox(width: 5),
+                          Text(
+                            '${widget.price} ETH',
+                            style: kGridItemPriceTextStyle,
+                          ),
+                        ]),
+                      ),
+                      const SizedBox(width: 10),
                     ]),
-                  ),
-                ]),
               ]),
         ),
         Positioned(
           top: -110,
           left: 10,
           child: SizedBox(
-            width: 260,
+            width: 255,
             height: 260,
             child: Stack(children: [
               Align(
